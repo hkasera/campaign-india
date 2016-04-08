@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Care</title>
+    <link rel="icon" type="image/x-icon" href="/img/icon.ico" />
+    <link rel="stylesheet" href="/css/waterfall.css">
+    <link rel="stylesheet" href="/css/aboutStyle.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <h1>
+
+            <div class="fright menu-links">
+                
+                <span>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="/login">Login/Sign up</a>
+            </div>
+
+            <div class="fright menu-links">
+                
+                <span>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="/about">About</a>
+            </div>
+            <a href="/">We Care</a>
+            <div class="fright menu-links">
+                Campaigns
+                <span>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="/ngos">NGOs</a>
+            </div>
+
+           
+            
+        </h1>
+        <div class="fclear"></div>
+    </div>
+
+    <div id="row">
+        <h1 class="white">About us</h1>
+        <div class="col-md-2"></div>
+
+        <div class="col-md-8">
+            <p class="white p">WeCare is a digital platform that will help NGOs to get onboard with technology to promote their campaigns. It will also help people in discoverability of various campaigns as well as provide detailed information about them. Volunteers can also contribute towards ongoing campaigns, run by different NGOs, via this platform. The best part about the platform is the ease of use and its effectiveness so that anyone can easily promote and market their campaigns to increase their visibility.
+
+            It is a free service. We plan to create a console for NGO's once they register on the website to manage their campaigns. I have created few user stories on the Github account for the same.</p>
+        </div>
+        <div class="col-md-2"></div>
+
+
+    </div>
+
+
+
+<div class="footer">
+    <div class="padding10">
+        &copy;2015 We Care.
+    </div>
+</div>
+<script src="/js/jquery.js"></script>
+<script src="/js/handlebars.js"></script>
+<script src="/js/jquery.easing.js"></script>
+<script src="/js/waterfall.js"></script>
+<script>
+$('#container').waterfall({
+    itemCls: 'item',
+    colWidth: 222,
+    gutterWidth: 15,
+    gutterHeight: 15,
+    isAutoPrefill: true,
+    isAnimated: true,
+    resizable:true,
+    animationOptions: {
+    },
+    path: function(page) {
+        return '/get/campaigns';
+    }
+});
+</script>
+</body>
+</html>

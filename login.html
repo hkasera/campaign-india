@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Care</title>
+    <link rel="icon" type="image/x-icon" href="/img/icon.ico" />
+    <link rel="stylesheet" href="/css/waterfall.css">
+    <link rel="stylesheet" href="/css/aboutStyle.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/mystyle.css">
+
+</head>
+
+
+<body>
+<div id="header">
+    <h1>
+        <a href="/">We Care</a>
+        <div class="fright menu-links">
+            <span style="color:black">&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="/login">Login/Sign up</a>
+        </div>
+
+        <div class="fright menu-links">
+            <span style="color:black">&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="/about">About</a>
+        </div>
+        
+        <div class="fright menu-links">
+        <spna style="color:black">Campaigns</span>
+            <span style="color:black">&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="/ngos">NGOs</a>
+        </div>
+  
+    </h1>
+    <div class="fclear"></div>
+</div>
+
+<div id="row">
+
+  <header>
+          <div class="form">
+        
+        <ul class="tab-group">
+          <li class="tab active"><a href="#signup">Sign Up</a></li>
+          <li class="tab"><a href="#login">Log In</a></li>
+        </ul>
+        
+        <div class="tab-content">
+          <div id="signup">   
+            <h1>Sign Up</h1>
+            
+            <form action="javascript:void(0)">
+            
+            <div class="top-row">
+              <div class="field-wrap">
+                <label>
+                  First Name*
+
+                </label>
+                <input type="text" required autocomplete="off" />
+              </div>
+          
+              <div class="field-wrap">
+                <label>
+                  Last Name*
+
+                </label>
+                <input type="text"required autocomplete="off"/>
+              </div>
+            </div>
+
+            <div class="field-wrap">
+              <label>
+                Email Address*
+
+              </label>
+              <input type="email"required autocomplete="off"/>
+            </div>
+            
+            <div class="field-wrap">
+              <label>
+                Password*
+
+              </label>
+              <input type="password"required autocomplete="off"/>
+            </div>
+            
+            <button type="submit" class="button button-block"/>Register</button>
+            
+            </form>
+
+          </div>
+          
+          <div id="login">   
+            <h1>Login</h1>
+            
+            <form action="javascript:void(0)">
+            
+              <div class="field-wrap">
+              <label>
+                Email Address*
+
+              </label>
+              <input type="email"required autocomplete="off"/>
+            </div>
+            
+            <div class="field-wrap">
+              <label>
+                Password*
+
+              </label>
+              <input type="password"required autocomplete="off"/>
+            </div>
+            
+            <p class="forgot"><a href="#">Forgot Password?</a></p>
+            
+            <button class="button button-block"/>Log In</button>
+            
+            </form>
+
+          </div>
+          
+        </div>
+        
+    </div>
+  </header>
+</div>
+
+
+<div class="footer">
+    <div class="padding10">
+        &copy;2015 We Care.
+    </div>
+</div>
+<script src="/js/jquery.js"></script>
+<script src="/js/handlebars.js"></script>
+<script src="/js/jquery.easing.js"></script>
+<script src="/js/waterfall.js"></script>
+<script src="/js/index.js"></script>
+<script src="/js/creative.js"></script>
+
+<script>
+$('#container').waterfall({
+    itemCls: 'item',
+    colWidth: 222,
+    gutterWidth: 15,
+    gutterHeight: 15,
+    isAutoPrefill: true,
+    isAnimated: true,
+    resizable:true,
+    animationOptions: {
+    },
+    path: function(page) {
+        return '/get/campaigns';
+    }
+});
+</script>
+</body>
+</html>

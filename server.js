@@ -48,6 +48,10 @@ var SampleApp = function() {
         //  Local cache for static content.
         self.zcache['index.html'] = fs.readFileSync('./index.html');
         self.zcache['ngos.html'] = fs.readFileSync('./ngos.html');
+        self.zcache['about.html'] = fs.readFileSync('./about.html');
+        self.zcache['login.html'] = fs.readFileSync('./login.html');
+
+
     };
 
 
@@ -148,6 +152,16 @@ var SampleApp = function() {
         self.routes['/ngos'] = function(req, res) {
             res.setHeader('Content-Type', 'text/html');
             res.send(self.cache_get('ngos.html') );
+        };
+
+        self.routes['/about'] = function(req, res) {
+            res.setHeader('Content-Type', 'text/html');
+            res.send(self.cache_get('about.html') );
+        };
+
+         self.routes['/login'] = function(req, res) {
+            res.setHeader('Content-Type', 'text/html');
+            res.send(self.cache_get('login.html') );
         };
     };
 

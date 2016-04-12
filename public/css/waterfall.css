@@ -149,6 +149,7 @@ a.campaign-link{
 }
 .tcenter{
     text-align: center;
+    font-family: sans-serif;
 }
 .container, #container{
     padding: 10px 20px 0;
@@ -156,14 +157,16 @@ a.campaign-link{
 }
 .tbpadding10{
     padding:10px 0;
+    font-family: cursive;
 }
 
 .campaign-card-container{
     margin: 0px auto;
     text-align: center;
+    float:left;
 }
 .campaign-card{
-    display:inline-block;
+   display:inline-block;
     padding:10px;
     width: 192px;   
     margin: 10px;
@@ -193,7 +196,7 @@ a.campaign-link{
 }
 .fa.social-icons{
     font-size: 20px;
-    padding-right: 10px;
+    padding-right: 10px; 
     color: #e65100;
 }
 .fa.social-icons.fa-facebook-official{
@@ -209,4 +212,47 @@ h1.header{
 .subheader{
     margin-bottom: 10px;
 }
+/*NGO Css*/
 
+.mission{
+    text-align: center;
+    font-size: 1.3em;
+    font-family:  verdana, sans-serif;
+}
+
+.about{
+
+    font-size: 18px;
+ /*   font-weight: bold;*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.what_do_we_do{
+    text-align: left;
+    font-weight: bold;
+
+}
+
+.social_networks{
+
+    padding-top: 450px;
+  /*  padding-left: 30px;*/
+}
+
+.social_icons{
+    padding-left: 30px;
+}
+
+.campaigns {
+    text-align: left;
+    font-weight: bold;
+
+}
+
+.description{
+    font-family: verdana;
+    font-size: 15px;
+}

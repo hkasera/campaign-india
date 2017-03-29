@@ -48,6 +48,7 @@ var SampleApp = function() {
         //  Local cache for static content.
         self.zcache['index.html'] = fs.readFileSync('./index.html');
         self.zcache['ngos.html'] = fs.readFileSync('./ngos.html');
+        self.zcache['about.html'] = fs.readFileSync('./about.html');
     };
 
 
@@ -149,6 +150,13 @@ var SampleApp = function() {
             res.setHeader('Content-Type', 'text/html');
             res.send(self.cache_get('ngos.html') );
         };
+
+        /*---------Render the about page for website---------*/
+        self.routes['/about'] = function(req, res) {
+            res.setHeader('Content-Type', 'text/html');
+            res.send(self.cache_get('about.html') );
+        };
+
     };
 
 
@@ -196,6 +204,7 @@ var SampleApp = function() {
             console.log('%s: Node server started on %s:%d ...',
                         Date(Date.now() ), self.ipaddress, self.port);
         });
+
     };
 
 };   /*  Sample Application.  */

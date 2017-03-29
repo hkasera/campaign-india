@@ -26,5 +26,5 @@ module.exports = function(self){
     self.app.get('/get/campaign/:id/minimal' , function(req, res) {
         Campaign.getCampaignMinimalDetails(req, res);
     });
- 
+
 }
